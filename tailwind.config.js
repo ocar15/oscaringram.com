@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'bisque': "#FFE4C4"
+      },
       backgroundImage: {
         'cubes': "url('/img/cubes.png')"
       }
