@@ -3,20 +3,43 @@
   <head>
     <link href="/css/output.css" rel="stylesheet">
     <title>Oscar Ingram</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
   </head>
-  <body class="bg-cubes bg-[length:850px]">
+  <body class="px-10 pt-8 bg-cubes bg-[length:850px] text-bisque">
+
     <!--Navbar-->
-    <div class="w-full flex flex-row bg-black/[.85]">
+    <div class="py-6 w-full flex flex-row rounded-xl bg-black/[.85]">
       <!--Left side-->
-      <div class="py-6 w-3/4 flex space-x-4 text-blue-500">
+      <div class="px-7 w-3/4 flex space-x-8">
         <div class="w-auto">Home</div>
         <div class="w-auto">About</div>
         <div class="w-auto">More</div>
         <div class="w-auto">More</div>
       </div>
       <!--Right side-->
-      <div class="py-6 w-1/4 text-bisque">Right side</div>
-      
+      <div class="w-1/4 flex">Right side</div>
+    </div>
+
+    <!--Marquee-->
+    <div class="my-7 w-full">
+      <marquee>
+        <div class="p-2 rounded-xl bg-black/[.85] italic">"A one stop shop for all things Oscar Ingram!"</div>
+      </marquee>
+    </div>
+
+    <!--Content-->
+    <div class="w-full flex flex-row gap-x-8 ">
+      <!--Left-->
+      <div class="w-1/4 flex rounded-xl bg-black/[.85]">Left</div>
+      <!--Middle-->
+      <div class="w-1/2 flex rounded-xl bg-black/[.85]">Middle</div>
+      <!--Right-->
+      <div class="p-5 w-1/4 flex flex-col rounded-xl bg-black/[.85]">
+        <img src="./img/me-standing.jpg" class="p-2 flex rounded-xl">
+        <div class="m-auto flex italic">This is me</div>
+      </div>
     </div>
   </body>
 </html>
