@@ -522,8 +522,9 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.m-auto {
-  margin: auto;
+.mx-16 {
+  margin-left: 4rem;
+  margin-right: 4rem;
 }
 
 .mx-auto {
@@ -541,6 +542,11 @@ video {
   margin-bottom: 1.75rem;
 }
 
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .flex {
   display: flex;
 }
@@ -555,6 +561,10 @@ video {
 
 .w-3\/4 {
   width: 75%;
+}
+
+.w-\[400px\] {
+  width: 400px;
 }
 
 .w-auto {
@@ -581,9 +591,8 @@ video {
   justify-content: flex-end;
 }
 
-.gap-x-8 {
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
+.justify-between {
+  justify-content: space-between;
 }
 
 .space-x-8 > :not([hidden]) ~ :not([hidden]) {
@@ -594,6 +603,16 @@ video {
 
 .rounded-xl {
   border-radius: 0.75rem;
+}
+
+.rounded-b-xl {
+  border-bottom-right-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-black\/\[\.65\] {
@@ -628,14 +647,24 @@ video {
   padding: 1.25rem;
 }
 
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+.px-24 {
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 
 .px-7 {
   padding-left: 1.75rem;
   padding-right: 1.75rem;
+}
+
+.px-\[15\%\] {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .py-6 {
@@ -655,12 +684,12 @@ video {
   padding-top: 1rem;
 }
 
-.pt-8 {
-  padding-top: 2rem;
-}
-
 .text-center {
   text-align: center;
+}
+
+.font-vaulto {
+  font-family: vaulto, sans-serif;
 }
 
 .text-2xl {
@@ -668,14 +697,18 @@ video {
   line-height: 2rem;
 }
 
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .text-7xl {
   font-size: 4.5rem;
   line-height: 1;
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+.font-bold {
+  font-weight: 700;
 }
 
 .italic {
@@ -690,4 +723,10 @@ video {
 .text-oscar-pink {
   --tw-text-opacity: 1;
   color: rgb(237 127 128 / var(--tw-text-opacity));
+}
+
+@font-face {
+  font-family: "vaulto";
+
+  src: url("./fonts/Vaulto-ExtraBold.ttf");
 }

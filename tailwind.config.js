@@ -12,6 +12,9 @@ module.exports = {
         'oscar-pink':"#ed7f80",
         'dark-pink':"#8f4c4c"
       },
+      fontFamily :{
+        vaulto: ["vaulto", "sans-serif"],
+      },
       backgroundImage: {
         'cubes': "url('/img/cubes.png')",
         'dark-cubes': "url('/img/dark-cubes.png')"
