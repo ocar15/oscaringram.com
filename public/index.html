@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
         <title>Oscar Ingram</title>
     </head>
     <body>
         <div id="navbar">
-            <a id="header" href="/">oscar ingram dot com</a>
+            <h1><a id="title" href="/">Oscar Ingram</a></h1>
             <div id="navbar-buttons">
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
@@ -15,30 +18,62 @@
         <div id="about">
             <img id="main-photo" src="images\oscar.JPG">
             <div id="blurb">
-                Oscar Ingram is a computer science student at the University of Virginia. He is a frequent hobbyist across many mediums. He loves to create using computers and has a particular fondness for digital art.
-            </div>
+                <h3 style="margin-bottom: 1rem; font-weight: bold;">Application programming | Systems design | Game development</h3>
+                As an undergraduate student at the University of Virginia I've had the opportunity to build websites, design full-stack apps, and create games. I love to make things with people in mind, and I take pride in every project I spend my time on.
+            </div>    
         </div>
-        <div id="projects">
-            <div id="projects-title">Projects</div>
+        
+        <h1 id="projects-title">Projects</h1>
+        <div id="project-grid">
+
+            <!-- UVA Thrift -->
             <div class="project-content">
-                <a class="project-img" href="https://github.com/ocar15/uvathrift/blob/main/README.md">
-                    <img style="width: 100%" src="https://opengraph.githubassets.com/%3Cany_hash_number%3E/ocar15/uvathrift">
-                </a>
-                <div class="project-info">
-                    <div class="project-title"><a href="https://github.com/ocar15/uvathrift/blob/main/README.md">UVAthrift</a></div>
-                    <div class="project-subtitle">Python Web App</div>
-                    <div class="project-desc">Fall 2025 group project. As the DevOps lead, I initialized our Django app, setup Heroku hosting, and configured AWS S3 bucket storage and file upload. <br><br> As a general team member, I also implemented the profile features, including the profile editting forms and the user photo upload feature.</div>
+                <h1 class="project-title"><a href="https://github.com/ocar15/uvathrift/blob/main/README.md">UVA Thrift</a></h1>
+                <div class="project-subtitle">Full-stack marketplace app</div>
+                <div class="project-thumbnail">
+                    <a href="https://github.com/ocar15/uvathrift/blob/main/README.md">
+                        <img src="https://opengraph.githubassets.com/%3Cany_hash_number%3E/ocar15/uvathrift">
+                    </a>
+                </div>
+                <div class="project-blocks">
+                    <div class="project-block">Fall 2025</div>
+                    <div class="project-block">5-person team</div>
+                    <div class="project-block">Role: DevOps</div>
+                </div>
+                <div class="project-desc">
+                    Contributions:
+                    <ul style="margin-top: 0.5rem">
+                        <li>Configured AWS S3 bucket storage for static files (css, user profile photos, etc.)</li>
+                        <li>Implemented the user profile system, allowing users to edit their profile names, descriptions, and associated photos</li>
+                        <li>Initialized Django app, configured Heroku hosting</li>
+                    </ul>
                 </div>
             </div>
+
+            <!-- Research Data Lab -->
             <div class="project-content">
-                <div class="project-info">
-                    <div class="project-title">"Card Sharp"</div>
-                    <div class="project-subtitle">After Effects animation</div>
-                    <div class="project-desc">A class project following the short story of a local card sharp. I created this keyframe animation using Adobe Photoshop, Illustrator and After Effects.</div>
+                <h1 class="project-title"><a href="https://github.com/ocar15/uvathrift/blob/main/README.md">Research Data Lab</a></h1>
+                <div class="project-subtitle">Django-based documentation website</div>
+                <div class="project-thumbnail">
+                    <a href="https://research-data-lab-f9bdgxeaf0fph5e9.eastus-01.azurewebsites.net/">
+                        <img src="images/research-data-lab.png">
+                    </a>
                 </div>
-                <iframe class="project-img" src="https://drive.google.com/file/d/1omJHPQBHGvVGgdDEhKvmIhjH7o4j4VqU/preview" height="500px"></iframe>
+                <div class="project-blocks">
+                    <div class="project-block">Ongoing</div>
+                    <div class="project-block">2-person team</div>
+                    <div class="project-block">Role: Developer, writer</div>
+                </div>
+                <div class="project-desc">
+                    Contributions:
+                    <ul style="margin-top: 0.5rem">
+                        <li>As the sole developer on this project, I was responsible for planning the app's software architecture and tech stack</li>
+                        <li>I implemented Contentful CMS to allow non-developers to write articles</li>
+                        <li>I designed and built the layout, intended for UVA researchers who are new to our many systems</li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div id="footer">© Oscar Ingram 2026 <br> All content created and owned by Oscar Ingram. <br> This is the end of the website.</div>
+        <footer>© Oscar Ingram 2026</footer>
     </body>
 </html>
