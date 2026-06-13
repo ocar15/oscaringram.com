@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    background: black;
+    color: white;
+}
+
+h1{
+    font-size: 6rem;
+    font-weight: normal;
+}
+
+#title {
+    margin: 40px auto;
+    font-variant: small-caps;
+}
+#home-content {
+    display: flex;
+    justify-content: space-evenly;
+    width: 400px;
+    margin: 0px auto;
+}
+#creature{
+    background: red;
+}
+#nav-list {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    font-variant: small-caps;
+}
+
+.nav-option{
+    margin: 5px;
+}
+.divider{}
