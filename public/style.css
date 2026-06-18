@@ -28,6 +28,16 @@ img {
     width: 100%;
 }
 
+iframe {
+    width: 100%;
+    height: 300px;
+}
+
+svg {
+    width: 2rem;
+    height: auto;
+}
+
 #navbar {
     margin: 1rem auto 0 auto;
     width: max-content;
@@ -42,16 +52,24 @@ img {
 }
 
 #navbar-buttons {
+    margin-bottom: 1rem;
     display: flex;
     justify-content: center;
     gap: 2rem;
     font-size: 2rem;
 }
 
+#socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
 #about {
     margin: auto;
     margin-top: 120px;
-    width: 80%;
+    width: 60%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -59,12 +77,12 @@ img {
 }
 
 #main-photo {
-    width: 30%;
+    width: 40%;
     object-fit: scale-down;
 }
 
 #blurb {
-    width: 60%;
+    width: 50%;
     font-size: 1.24rem;
     font-weight: normal;
     display: flex;
@@ -168,6 +186,7 @@ footer {
 
     #blurb {
         width: 100%;
+        text-align: center;
     }
 
     #projects-title {
